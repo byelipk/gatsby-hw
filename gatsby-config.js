@@ -3,14 +3,20 @@ module.exports = {
     `gatsby-plugin-typography`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-gtag`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        // your google analytics tracking id
-        trackingId: `UA-135083219-2`,
-        // Puts tracking script in the head instead of the body
-        head: true,
-        // enable ip anonymization
-        anonymize: true,
+        trackingIds: [
+          "UA-135083219-2"
+        ],
+        gtagConfig: {
+          optimize_id: "GTM-PK5KLCL",
+          anonymize_ip: true,
+          cookie_expires: 0,
+        },
+        // pluginConfig: {
+        //   head: true,
+        //   respectDNT: true,
+        // }
       },
     }
   ],

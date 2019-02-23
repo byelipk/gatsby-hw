@@ -10,11 +10,6 @@ class Index extends React.Component {
       <Layout>
         <Helmet>
           <title>Hahah Suckers</title>
-          <script>
-            {window && window.gtag 
-              ? window.gtag("config", "UA-135083219-2", { optimize_id: "GTM-PK5KLCL" })
-              : null}
-          </script>
         </Helmet>
         <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
         <p>
