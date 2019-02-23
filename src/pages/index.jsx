@@ -11,7 +11,7 @@ class Index extends React.Component {
         <Helmet>
           <title>Hahah Suckers</title>
           <script>
-            {typeof window.gtag === "function"
+            {window && window.gtag 
               ? window.gtag("config", "UA-135083219-2", { optimize_id: "GTM-PK5KLCL" })
               : null}
           </script>
