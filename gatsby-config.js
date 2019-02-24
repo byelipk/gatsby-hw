@@ -1,5 +1,9 @@
 const path = require("path");
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   plugins: [
     `gatsby-plugin-typography`,
@@ -7,9 +11,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: ["UA-135083219-2"],
+        trackingIds: [`${process.env.GOOGLE_ANALYTICS_ID}`],
         gtagConfig: {
-          optimize_id: "GTM-PK5KLCL",
+          optimize_id: `${process.env.GOOGLE_OPTIMIZE_ID}`,
           anonymize_ip: true,
           cookie_expires: 0,
         },
@@ -22,7 +26,7 @@ module.exports = {
     {
       resolve: `gatsby-anti-flicker-snippet`,
       options: {
-        optimizeIds: ["GTM-PK5KLCL"],
+        optimizeIds: [`${process.env.GOOGLE_OPTIMIZE_ID}`],
       },
     },
     {
