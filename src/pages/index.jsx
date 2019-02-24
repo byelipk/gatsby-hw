@@ -9,7 +9,7 @@ class Index extends React.Component {
     return (
       <Layout>
         <Helmet>
-          <title>Hahah Suckers</title>
+          <title>The Home Page</title>
         </Helmet>
         <h1>Hi! I'm building a fake Gatsby site as part of a tutorial!</h1>
         <p>
