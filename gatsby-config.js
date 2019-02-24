@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
   plugins: [
     `gatsby-plugin-typography`,
@@ -23,5 +25,14 @@ module.exports = {
         optimizeIds: ["GTM-PK5KLCL"],
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
+    `gatsby-transformer-sharp`, 
+    `gatsby-plugin-sharp`
   ],
 }

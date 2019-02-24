@@ -14,10 +14,16 @@
     "doit": "npm run build && firebase deploy"
   },
   "dependencies": {
+    "@researchgate/react-intersection-observer": "^0.7.4",
     "gatsby": "^2.1.17",
+    "gatsby-background-image": "^0.2.3",
+    "gatsby-image": "^2.0.29",
     "gatsby-plugin-google-gtag": "^1.0.13",
     "gatsby-plugin-react-helmet": "^3.0.6",
+    "gatsby-plugin-sharp": "^2.0.22",
     "gatsby-plugin-typography": "^2.2.7",
+    "gatsby-source-filesystem": "^2.0.22",
+    "gatsby-transformer-sharp": "^2.1.14",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
